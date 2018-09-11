@@ -1,0 +1,13 @@
+theme: jekyll-theme-hacker
+
+plugins:
+  - jemoji
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-avatar
+  - jekyll-mentions
+  - jekyll-readme-index
+
+readme_index:
+  enabled: true
+  remove_originals: false
