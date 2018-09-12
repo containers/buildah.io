@@ -5,10 +5,10 @@ layout: feed
 <feed xmlns="http://www.w3.org/2005/Atom">
 
 	<title>Buildah Blog</title>
-	<link href="http://containers.github.io/buildah.io/blog/atom.xml" rel="self"/>
-	<link href="http://containers.github.io/buildah.io/blog"/>
+	<link href="http://containers.github.io/buildah.io/atom.xml" rel="self"/>
+	<link href="http://containers.github.io/buildah.io/"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://containers.github.io/blog</id>
+	<id>http://containers.github.io/</id>
 
 	{% for post in site.posts %}
 		<entry>

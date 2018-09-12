@@ -13,4 +13,4 @@ readme_index:
   enabled: true
   remove_originals: false
 
-excerpt_separator: "READMORE"
+excerpt_separator: "<!--readmore-->"
