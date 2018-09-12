@@ -7,7 +7,10 @@ plugins:
   - jekyll-avatar
   - jekyll-mentions
   - jekyll-readme-index
+  - jekyll-sitemap
 
 readme_index:
   enabled: true
   remove_originals: false
+
+excerpt_separator: "READMORE"
