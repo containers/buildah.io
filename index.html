@@ -8,10 +8,19 @@ Welcome to the site for <a href="https://github.com/projectatomic/buildah/blob/m
 
 <img src="images/buildah.png" alt="Buildah logo">
 
-<h1>Blog</h1>
+<h2>Blogs</h2>
 
 <section class="posts">
   {% for post in site.posts %}
+    <p><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></p>
+    <p>{{ post.excerpt }}</p><hr>
+  {% endfor %}
+</section>
+
+<h2>Release Announcements</h2>
+
+<section class="releases">
+  {% for post in site.releases %}
     <p><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></p>
     <p>{{ post.excerpt }}</p><hr>
   {% endfor %}
