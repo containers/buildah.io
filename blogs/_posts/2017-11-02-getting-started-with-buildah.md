@@ -20,7 +20,7 @@ I've been working with Linux containers at Red Hat since OpenShift used cartridg
 
 I'm very excited to see the Project Atomic efforts in the area of the Open Container Initiative (OCI) and specifically Buildah. After trying out the great work that the team have contributed, I discovered I had the start of a pretty useful introductory tutorial, and decided to see if I could contribute that content upstream. [That pull request](https://github.com/projectatomic/buildah/pull/302) was merged recently. So let's get started.
 
-READMORE
+<!--readmore-->
 
 ## Building OCI container images
 

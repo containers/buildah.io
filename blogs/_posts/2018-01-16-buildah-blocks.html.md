@@ -11,7 +11,7 @@ I’ve always been fascinated by the [three shells and a pea game](https://en.wi
 
 I had a bit of time to play, so I tried out a variant of the shell game with Open Containers Initiative (OCI) containers. I made a quick example showing how you can create an OCI image with Buildah, saved the image to a repository on Docker Hub and then used both Docker and Buildah to run that  image from Docker Hub. Nothing terribly fancy, but the video does illustrate that Buildah is OCI-compliant and the images it creates can be used by other OCI-compliant technologies.
 
-READMORE
+<!--readmore-->
 
 The [demo](https://asciinema.org/a/biE5aEvLRJK6uMBwd106eB7S1) was recorded on a Fedora 27 virtual machine that was installed and then updated on December 23, 2017.  I decided to "leverage" William Henry’s [Buildah Tutorial #1](https://github.com/projectatomic/buildah/blob/master/docs/tutorials/tutorials.md) a bit to create a Dockerfile that runs his `runecho.sh` file. Prior to the video, I did the following on the virtual machine:
 

@@ -13,7 +13,7 @@ We're pleased to announce the release of Buildah Alpha version 0.16 which is now
 
 The Buildah project has continued to grow over the past several weeks, welcoming several new contributors to the mix, launching new functionality and creating a number of improvements and bug fixes.  
 
-READMORE
+<!--readmore-->
 
 ## The major highlights for this release are:
 

@@ -9,7 +9,7 @@ tags: atomic, buildah, containers
 
 I’m a fan of Isaac Asimov’s ["Three Laws of Robotics"](https://en.wikipedia.org/wiki/Three_Laws_of_Robotics) and I'm beginning to wonder if these laws need to be wired into [Buildah](https://github.com/projectatomic/buildah). You see Buildah builds itself. It’s self-propagating.
 
-READMORE
+<!--readmore-->
 
 We recently were building out our test system for Buildah and for part of that testing we needed to make sure Buildah's RPM would build.  Buildah uses Travis CI to do its testing and within our test bats file we create a container and then the RPM within it to make sure the RPM builds appropriately. While reviewing the code for that test, I commented that it would be nice if we could create a second container to install the RPM on and maybe make sure the command `buildah help` worked.
 

@@ -15,7 +15,7 @@ We're pleased to announce the release of Buildah version 1.2 which is now availa
 
 The Buildah project has continued to grow over the past several weeks, welcoming several new contributors to the mix.  The highlights of this release are the added ability to control image layers when building an image, CVE’s Fixes, the initial support for user namespace handling and several other enhancements and bug fixes.
 
-READMORE
+<!--readmore-->
 
 ## The major highlights for this release are:
 

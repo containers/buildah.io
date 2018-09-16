@@ -11,7 +11,7 @@ Like many other Americans, I am fighting the battle to stay fit and I'm not alwa
 
 A really nice feature about [Buildah](https://github.com/projectatomic/buildah) is you can strengthen your container making it &quot;stronger and more fit&quot;.  By finely tuning the creation of the container, and then adding or removing pieces as you desire, you can control the size of your container and lessen its vulnerabilities.  It's all under your control.
 
-READMORE
+<!--readmore-->
 
 ## Building a Buildah Fedora Container That Fits!
 
