@@ -2,6 +2,7 @@
 title: Buildah - build your containers from the ground up!
 author: tsweeney
 date: 2017-06-22 15:00:00 UTC
+categories: [blogs]
 tags: containers, images, docker, buildah, oci
 comments: true
 published: true
