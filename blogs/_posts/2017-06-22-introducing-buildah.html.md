@@ -11,7 +11,7 @@ Since I'm relatively new to the world of containers and images, I was excited to
 
 Buildah is a newly released command line tool for efficiently and quickly building [Open Container Initiative](https://www.opencontainers.org/) (OCI) compliant images and containers.  Buildah simplifies the process of creating, building and updating images while decreasing the learning curve of the container environment.  It is easily scriptable and can be used in an environment where one needs to spin up containers automatically based on calls from your application.  What's really neat is there is no requirement for a container runtime daemon to be running on your system chewing up resources and complicating the build process.
 
-READMORE
+<!--readmore-->
 
 ## Testing Environment
 

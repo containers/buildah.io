@@ -15,7 +15,7 @@ We're pleased to announce the release of Buildah version 1.1 which is now availa
 
 The Buildah project has continued to grow over the past several weeks, welcoming several new contributors to the mix, launching new functionality and creating a number of improvements and bug fixes.  
 
-READMORE
+<!--readmore-->
 
 ## The major highlights for this release are:
 

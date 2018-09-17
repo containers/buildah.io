@@ -21,7 +21,7 @@ First some terminology. In the container image space, Docker popularized two ter
 
 The container image registry, or registry, is a shared data store for pushing and pulling container images. It has a well-known API for such requests. Docker Hub is an example of a public registry. Various vendors and developers store their images on Docker Hub. Most organizations I've dealt with don't wish to pull images from a public registry for reasons such as security or network bandwidth usage. Instead they would prefer to use a local private registry.  
 
-READMORE
+<!--readmore-->
 
 The second term is a container image repository, A repository is a local storage area on a host. Images are often pulled from a registry to the host's repository and run on the host. Sometimes they are modified, tagged and pushed back into a registry as a new image or a new version of an image. On a host that is using Buildah, and its underlying OCI-based technology, this repository is located in `/var/lib/containers/storage`.  This is used by, but not to be confused with, the containers/storage and containers/image library projects. These projects use the `/var/lib/containers/storage` directory by default. 
  
