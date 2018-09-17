@@ -10,8 +10,7 @@ tags:
 - oci
 - containers
 ---
-
-![Buildah logo](buildah-logo.png)
+![buildah logo](https://cdn.rawgit.com/projectatomic/buildah/master/logos/buildah-logo_large.png)
 
 *Check out the new Buildah project logo.  Isn't it sweet?*
 

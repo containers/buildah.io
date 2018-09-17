@@ -11,7 +11,6 @@ tags:
 - containers
 - kubernetes
 ---
-
 ![buildah logo](https://cdn.rawgit.com/projectatomic/buildah/master/logos/buildah-logo_large.png)
 
 # Building a Buildah Container Image for Kubernetes

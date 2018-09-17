@@ -7,6 +7,7 @@ comments: false
 categories: [blogs]
 tags: atomic, buildah, containers
 ---
+![buildah logo](https://cdn.rawgit.com/projectatomic/buildah/master/logos/buildah-logo_large.png)
 
 I’ve always been fascinated by the [three shells and a pea game](https://en.wikipedia.org/wiki/Shell_game) that street hustlers have used for years to make a bit of coin. I love watching a talented person running the game, but I know better than to bet on it! However, playing the game with [Buildah](https://github.com/projectatomic/buildah) leads to everyone being a winner.
 
