@@ -4,6 +4,7 @@ author: tsweeney
 date: 2018-02-21 00:00:00 UTC
 published: true
 comments: false
+categories: [releases]
 tags: atomic, buildah, containers
 ---
 

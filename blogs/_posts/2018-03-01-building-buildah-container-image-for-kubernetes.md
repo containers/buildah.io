@@ -4,6 +4,7 @@ author: ipbabble
 date: 2018-03-01 00:00:00 UTC
 published: true
 comments: false
+categories: [blogs]
 tags:
 - buildah
 - oci

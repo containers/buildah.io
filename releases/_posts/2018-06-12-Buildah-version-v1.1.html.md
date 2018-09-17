@@ -2,6 +2,7 @@
 title: Buildah version 1.1 Release Announcement
 author: tsweeney
 date: 2018-06-12 00:00:00 UTC
+categories: [releases]
 tags: community, open source, buildah
 comments: false
 published: true
