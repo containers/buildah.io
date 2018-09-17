@@ -7,6 +7,7 @@ tags: containers, images, docker, buildah, oci
 comments: true
 published: true
 ---
+![buildah logo](https://cdn.rawgit.com/projectatomic/buildah/master/logos/buildah-logo_large.png)
 
 Since I'm relatively new to the world of containers and images, I was excited to learn about [the Buildah tool](https://github.com/projectatomic/buildah).  Especially since I'm a native New Englander and it's a clever play on how we say Builder in these parts.
 

@@ -7,6 +7,7 @@ comments: false
 categories: [blogs]
 tags: atomic, buildah, containers
 ---
+![buildah logo](https://cdn.rawgit.com/projectatomic/buildah/master/logos/buildah-logo_large.png)
 
 I’m a fan of Isaac Asimov’s ["Three Laws of Robotics"](https://en.wikipedia.org/wiki/Three_Laws_of_Robotics) and I'm beginning to wonder if these laws need to be wired into [Buildah](https://github.com/projectatomic/buildah). You see Buildah builds itself. It’s self-propagating.
 

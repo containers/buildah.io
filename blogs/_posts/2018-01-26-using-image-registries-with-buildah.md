@@ -8,8 +8,7 @@ comments: false
 categories: [blogs]
 tags: buildah, oci, containers, registry
 ---
-
-![Buildah](/images/buildah-logo.png?1517062481)
+![buildah logo](https://cdn.rawgit.com/projectatomic/buildah/master/logos/buildah-logo_large.png)
 
 # Using Buildah with container registries
 
