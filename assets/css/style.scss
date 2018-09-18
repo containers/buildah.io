@@ -13,7 +13,8 @@ a.buttons {
 }
 
 a {
-	color: #222222;
+	color: #333333;
+	font-weight: bold;
 }
 
 header li {
@@ -23,10 +24,13 @@ header li {
 }
 
 header li:hover {
-	background: #dda900;
-	color: #000000;
+	background: #eea900;
 }
 
 header li a {
+	color: #000000;
+}
+
+header li a:hover {
 	color: #000000;
 }
