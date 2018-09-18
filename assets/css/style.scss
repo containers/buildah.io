@@ -12,6 +12,10 @@ a.buttons {
 	height: 2em;
 }
 
+a {
+	color: #222222;
+}
+
 header li {
 	background: #ffcb00;
 	-webkit-box-shadow: inset 0px 1px 1px 0 #ffcb00;
@@ -19,7 +23,8 @@ header li {
 }
 
 header li:hover {
-	background: #ffcb00;
+	background: #dda900;
+	color: #000000;
 }
 
 header li a {
