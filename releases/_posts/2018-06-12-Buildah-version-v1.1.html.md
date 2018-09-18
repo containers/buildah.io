@@ -1,5 +1,6 @@
 ---
 title: Buildah version 1.1 Release Announcement
+layout: default
 author: tsweeney
 date: 2018-06-12 00:00:00 UTC
 categories: [releases]
@@ -57,7 +58,7 @@ The Buildah project has continued to grow over the past several weeks, welcoming
  * Touchup man page short options across man pages
  * Demo Changes
    * Added demo dir and a demo.
-   * Added Docker compatibility demo 
+   * Added Docker compatibility demo
    * Added a bud demo and tidied up
    * Update buildah scratch demo to support el7
    * Quick fix on demo readme
@@ -84,7 +85,7 @@ The Buildah project has continued to grow over the past several weeks, welcoming
    * Update github.com/containers/libpod
    * Vendor in latest containers/image
  * Plus a number of smaller fixes.
- 
+
 ## Try it Out.
 
 If you haven’t yet, install Buildah from the Fedora repo or GitHub and give it a spin.  We’re betting you'll find it’s an easy and quick way to build containers in your environment without a daemon being involved!

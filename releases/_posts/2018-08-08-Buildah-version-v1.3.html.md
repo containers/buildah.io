@@ -1,5 +1,6 @@
 ---
 title: Buildah version 1.3 Release Announcement
+layout: default
 author: tsweeney
 date: 2018-08-08 00:00:00 UTC
 categories: [releases]
@@ -68,4 +69,3 @@ If you haven’t yet, install Buildah from the Fedora repo or GitHub and give it
 For those of you who contributed to this release, thank you very much for your contributions!  If you haven't joined our community yet, don't wait any longer!  Come join us in GitHub, where Open Source communities live.
 
 ## Buildah == Simplicity
-

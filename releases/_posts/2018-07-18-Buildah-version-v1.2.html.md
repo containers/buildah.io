@@ -1,5 +1,6 @@
 ---
 title: Buildah version 1.2 Release Announcement
+layout: default
 author: tsweeney
 date: 2018-07-14 00:00:00 UTC
 categories: [releases]
@@ -19,7 +20,7 @@ The Buildah project has continued to grow over the past several weeks, welcoming
 
 ## The major highlights for this release are:
 
-### Allow the user to control the layers of the image when the image is built with the ‘buildah bud’ command. 
+### Allow the user to control the layers of the image when the image is built with the ‘buildah bud’ command.
 
 A container is comprised of a final readable/writeable layer and when the layers are cached, a number of intermediate read only layers.  The read only layers are created with each step in the Dockerfile and the final readable/writeable layer contains the intermediate layers.  Prior to these changes Buildah did not cache these intermediate read only layers.
 
