@@ -1,5 +1,6 @@
 ---
 title: Building a Buildah container image for Kubernetes
+layout: default
 author: ipbabble
 date: 2018-03-01 00:00:00 UTC
 published: true
@@ -20,13 +21,13 @@ Dan Walsh ([@rhatdan](https://github.com/rhatdan)) asked me to look into buildin
 
 <!--readmore-->
 
-However this does not solve the problem of building container images. Until recently, Docker was considered the gold standard for building OCI compliant container images - and with Docker, a running daemon is required to build them. There are two ways to solve this: have dedicated build nodes or run the Docker daemon across the cluster, which puts us back at square zero. 
+However this does not solve the problem of building container images. Until recently, Docker was considered the gold standard for building OCI compliant container images - and with Docker, a running daemon is required to build them. There are two ways to solve this: have dedicated build nodes or run the Docker daemon across the cluster, which puts us back at square zero.
 
 The daemon runs as root, and adds complexity and attack surface. To mitigate this risk, having dedicated machines for doing builds seems the better choice. But when you have a cluster of resources with something like Kubernetes you really don’t want to waste resources with dedicated nodes which might sit idle when not doing builds. It’s much better to schedule builds in the cluster, just like any other process. There are several reasons for this.
 
 * In a continuous integration, multi-tenant environment there can be multiple builds going on at any time. So if your cluster is a PaaS for developers you want to be able to schedule builds whenever the developer needs them as quickly as possible. Having the ability to schedule across the cluster is very efficient.
 * When new base images become available in a continuous deployment environment, you will want to take advantage of them as soon as possible. This may cause a spike of build activity that you want to spread across the cluster rather than overloading a single machine.
-* Related to the second point, when security events like a CVE occurs, many images will need to be rebuilt to ensure the vulnerability is addressed. Again this is going to cause spikes and will require many simultaneous build resources. 
+* Related to the second point, when security events like a CVE occurs, many images will need to be rebuilt to ensure the vulnerability is addressed. Again this is going to cause spikes and will require many simultaneous build resources.
 
 Therefore it is important to be able to be able to schedule container image builds within the kubernetes cluster. But it's hardly worth having solved the "big fat daemon" issue for runtime if you still need the daemon for build time across the cluster. i.e. you still need to have Docker running on all the nodes in the cluster if you intend to do builds on them.
 
@@ -65,7 +66,7 @@ Next I install the buildah package and dependencies into the containers filesyst
 # dnf clean all --installroot $scratchmnt --release 27
 ```
 
-Now we need to set the container ENTRYPOINT and CMD. It's good practice to use ENTRYPOINT for the command that you want to run. When containerizing a command line tool, I usually set CMD to `--help` so that it gets appended to the ENTRYPOINT if you don't specify any parameters. I got into the practice after reading Michael Crosby’s [Best Practices](http://crosbymichael.com/dockerfile-best-practices.html) post. See section 5. 
+Now we need to set the container ENTRYPOINT and CMD. It's good practice to use ENTRYPOINT for the command that you want to run. When containerizing a command line tool, I usually set CMD to `--help` so that it gets appended to the ENTRYPOINT if you don't specify any parameters. I got into the practice after reading Michael Crosby’s [Best Practices](http://crosbymichael.com/dockerfile-best-practices.html) post. See section 5.
 
  (Currently Buildah needs ‘\’ for parameters with ‘--’. That will get fixed.)
 
@@ -105,7 +106,7 @@ To test it you can also use the Podman client. That way you don't have to instal
 * You probably need network access if you are going to run something like `buildah bud`. You don't need this if you are just running `buildah images/containers` etc. But many use cases will be using `bud` and so I've just used the hosts network and now the bridge because it's a short running build process. So for the example I'll use the `--network host` parameter for `podman run`.
 * You'll need to bind mount an area of the file system, so that `buildah bud` can build up and then commit the image to the host file system. This can be `/var/lib/containers` if you like, so as it’s immediately shared shared on the host, or it can be some build sandbox area etc. You also need to bind mount the Dockerfile path so that Buildah can see the Dockerfile. So for the example I’ll use the bind mount parameter `-v` or `--volume` parameter for `podman run`.
 
-Use your favorite Nginx Dockerfile or the one below. 
+Use your favorite Nginx Dockerfile or the one below.
 
 ```
 # Base on the Fedora
@@ -125,7 +126,7 @@ ENTRYPOINT [ "/usr/sbin/nginx" ]
 The following command builds an Nginx container image called ‘nginx’. Obviously using Podman (or Docker) is overkill because they both have build capabilities. Ideally this container would be run in a pod on kubernetes through CRI-O. My Dockerfile is in my `/home/whenry/dfs` directory (shorter for dockerfiles). So I bind mount that directory to `/tmp` inside the container. Inside it’s `/tmp/Dockerfile`.
 
 ```
-# podman run --privileged --network host -v /var/lib/containers:/var/lib/containers:rw  -v /home/whenry/dfs:/tmp:Z buildah bud -f /tmp/Dockerfile -t nginx 
+# podman run --privileged --network host -v /var/lib/containers:/var/lib/containers:rw  -v /home/whenry/dfs:/tmp:Z buildah bud -f /tmp/Dockerfile -t nginx
 ```
 
 Currently, due to OverlayFS requiring root privileges, this container must run in privileged mode. This requirement should be deprecated when Fedora’s OverlayFS does not require a privileged user.
@@ -136,14 +137,14 @@ There is a requirement in large clusters for buildah not to run in privileged mo
 
 I had prepared an example of how to do this but I will keep it for a later blog.  Here are some of the current constraints I encountered trying to solve the non-privileged problem.
 
-* If you want to share the builds immediately through the hosts `/var/lib/containers` then you need to run Buildah as privileged. You could build somewhere else and then move the images to `/var/lib/containers` - see below. 
+* If you want to share the builds immediately through the hosts `/var/lib/containers` then you need to run Buildah as privileged. You could build somewhere else and then move the images to `/var/lib/containers` - see below.
 * If you don't care to share on the host immediately then you can use unprivileged (don’t use --privileged) but you need to use a different directory than /var/lib/containers. However currently OverlayFS requires privileged mode on Fedora/RHEL. This should be fixed soon. You could use `--storage-driver=vfs`.
 * If you decide to build inside the container you can do that with unprivileged, but you hit the overlay on overlay issue and will then need to run with `--storage-driver vfs`. This worked at one point but I’ve seen a regression. I am investigating.
 
-Watch for a progress upstream and for a new blog post on using Buildah unprivileged in a later blog. 
+Watch for a progress upstream and for a new blog post on using Buildah unprivileged in a later blog.
 
 ## Final thanks and some helpful links
 
-Feel free to pull the Buildah image  ipbabble/buildah from Quay.io. Have fun. Thanks to [@nalind](https://github.com/nalind), [@tsweeney](https://github.com/nalind) (so many great edits) , [@fatherlinux](https://github.com/fatherlinux),  [@bbaude](https://twitter.com/bbaude), [@rhatdan](https://github.com/rhatdan), [@rossturk](https://twitter.com/rossturk), and [@bparees](https://github.com/bparees) (confirming the kubernetes use case) for all the input along the way. 
+Feel free to pull the Buildah image  ipbabble/buildah from Quay.io. Have fun. Thanks to [@nalind](https://github.com/nalind), [@tsweeney](https://github.com/nalind) (so many great edits) , [@fatherlinux](https://github.com/fatherlinux),  [@bbaude](https://twitter.com/bbaude), [@rhatdan](https://github.com/rhatdan), [@rossturk](https://twitter.com/rossturk), and [@bparees](https://github.com/bparees) (confirming the kubernetes use case) for all the input along the way.
 
-If you have any suggestions or issues please post them at the [Project Atomic Buildah Issues](https://github.com/containers/buildah/issues) page. For more information on Buildah and how you might contribute please visit the [Buildah home page](https://github.com/containers/buildah) on Github including [tutorials](https://github.com/containers/buildah/blob/master/docs/tutorials/README.md).  For more information on the buildah system container see [here](https://github.com/projectatomic/atomic-system-containers/buildah-fedora/config.json.template). My previous blogs on Buildah: [Intro to Buildah](http://buildah.io/blogs/2017/11/02/getting-started-with-buildah.html), [Using Buildah with registries](https://buildah.io/blogs/2018/01/26/using-image-registries-with-buildah.html). Information on Podman can be found [here](https://github.com/containers/libpod).  Podman man pages [here](https://github.com/containers/libpod/tree/master/docs). 
+If you have any suggestions or issues please post them at the [Project Atomic Buildah Issues](https://github.com/containers/buildah/issues) page. For more information on Buildah and how you might contribute please visit the [Buildah home page](https://github.com/containers/buildah) on Github including [tutorials](https://github.com/containers/buildah/blob/master/docs/tutorials/README.md).  For more information on the buildah system container see [here](https://github.com/projectatomic/atomic-system-containers/buildah-fedora/config.json.template). My previous blogs on Buildah: [Intro to Buildah](http://buildah.io/blogs/2017/11/02/getting-started-with-buildah.html), [Using Buildah with registries](https://buildah.io/blogs/2018/01/26/using-image-registries-with-buildah.html). Information on Podman can be found [here](https://github.com/containers/libpod).  Podman man pages [here](https://github.com/containers/libpod/tree/master/docs).

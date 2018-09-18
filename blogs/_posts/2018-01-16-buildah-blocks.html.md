@@ -1,5 +1,6 @@
 ---
 title: Buildah Blocks - OCI Shell Game
+layout: default
 author: tsweeney
 date: 2018-01-16 00:00:00 UTC
 published: true

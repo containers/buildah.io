@@ -1,5 +1,6 @@
 ---
 title: Using OCI Image Registries with Buildah
+layout: default
 author: ipbabble
 date: 2018-01-26 00:00:00 UTC
 layout: post
@@ -14,7 +15,7 @@ tags: buildah, oci, containers, registry
 
 *Prerequisite: Buildah version 0.9 or greater.*
 
-First some terminology. In the container image space, Docker popularized two terms: 
+First some terminology. In the container image space, Docker popularized two terms:
 
 * Container image registry
 * Container image repository
@@ -23,8 +24,8 @@ The container image registry, or registry, is a shared data store for pushing an
 
 <!--readmore-->
 
-The second term is a container image repository, A repository is a local storage area on a host. Images are often pulled from a registry to the host's repository and run on the host. Sometimes they are modified, tagged and pushed back into a registry as a new image or a new version of an image. On a host that is using Buildah, and its underlying OCI-based technology, this repository is located in `/var/lib/containers/storage`.  This is used by, but not to be confused with, the containers/storage and containers/image library projects. These projects use the `/var/lib/containers/storage` directory by default. 
- 
+The second term is a container image repository, A repository is a local storage area on a host. Images are often pulled from a registry to the host's repository and run on the host. Sometimes they are modified, tagged and pushed back into a registry as a new image or a new version of an image. On a host that is using Buildah, and its underlying OCI-based technology, this repository is located in `/var/lib/containers/storage`.  This is used by, but not to be confused with, the containers/storage and containers/image library projects. These projects use the `/var/lib/containers/storage` directory by default.
+
 When you develop a useful container image using Buildah you may wish to share it with others either in a local container image registry or a remote or public container image registry. The purpose of this tutorial is to demonstrate how Buildah can be used to move OCI-compliant images in and out of private or public registries.
 
 In the [first tutorial](https://buildah.io/blogs/2017/11/02/getting-started-with-buildah.html) we built an image from scratch that we called `fedora-bashecho` and we pushed it to a local Docker repository using the `docker-daemon` protocol. We are going to use the same image to push to a private Docker registry. If you have not performed the first tutorial it is important that you do that now, before you proceed.
@@ -51,7 +52,7 @@ You can use `--debug` on any Buildah command.
 
 The registry is running and is waiting for requests to process. Notice that this registry is a Docker registry that we pulled from Docker hub and we are running it for this example using `buildah run`. There is no Docker daemon running at this time.
 
-## Pushing an image to a private registry 
+## Pushing an image to a private registry
 
 Let's push our image to the private registry. By default, Buildah is set up to expect secure connections to a registry. Therefore we will need to turn the TLS verification off using the `--tls-verify` flag. We also need to tell Buildah that the registry is on this local host ( i.e. localhost) and listening on port 5000. Similar to  what you'd expect to do on multi-tenant Docker hub, we will explicitly specify that the registry is to store the image under the `ipbabble` repository - so as not to clash with other users' similarly named images.
 
@@ -80,7 +81,7 @@ Let's push our image to the private registry. By default, Buildah is set up to e
         ]
     }
 
-## Testing portability 
+## Testing portability
 
 We can verify that it is still portable with Docker by starting Docker again, as we did in the first tutorial. Then we can pull down the image and starting the container using Docker:
 
@@ -164,4 +165,3 @@ Success!
 If you have any suggestions or issues please post them at the [ProjectAtomic Buildah Issues page](https://github.com/containers/buildah/issues).
 
 For more information on Buildah and how you might contribute please visit the [Buildah home page on Github](https://github.com/containers/buildah).
-

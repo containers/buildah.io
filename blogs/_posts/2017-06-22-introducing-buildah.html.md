@@ -1,5 +1,6 @@
 ---
 title: Buildah - build your containers from the ground up!
+layout: default
 author: tsweeney
 date: 2017-06-22 15:00:00 UTC
 categories: [blogs]

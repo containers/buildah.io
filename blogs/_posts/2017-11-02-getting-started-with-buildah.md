@@ -1,5 +1,6 @@
 ---
 title: Getting Started with Buildah
+layout: default
 author: ipbabble
 date: 2017-11-02 12:00:00 UTC
 published: true

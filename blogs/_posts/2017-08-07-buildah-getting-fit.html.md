@@ -1,5 +1,6 @@
 ---
 title: Buildah Blocks &mdash; Getting Fit
+layout: default
 author: tsweeney
 date: 2017-08-07 13:00:00 UTC
 categories: [blogs]
