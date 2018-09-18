@@ -22,7 +22,7 @@ a:hover {
 	text-decoration: none;
 }
 
-a.header {
+.header {
 	font-weight: normal;
 }
 
@@ -38,6 +38,7 @@ header li:hover {
 
 header li a {
 	color: #000000;
+	text-decoration: none;
 }
 
 a.buttons:hover {
