@@ -7,11 +7,11 @@ tags: buildah, fedora, containers
 comments: false
 published: true
 ---
-![buildah logo](https://cdn.rawgit.com/projectatomic/buildah/master/logos/buildah-logo_large.png)
+![buildah logo](https://buildah.io/images/buildah.png)
 
 Like many other Americans, I am fighting the battle to stay fit and I'm not always winning.  Staying fit can also be a problem in the container environment.  A common problem people have with building container images with tools like Dockerfile and the run-time-based [docker build command](https://docs.docker.com/engine/reference/commandline/build/) is the size of the image, as well as the number of build tools that end up inside of it.  Another concern about these unnecessary tools is they can weaken your container by opening potential venues for hackers to take advantage.
 
-A really nice feature about [Buildah](https://github.com/projectatomic/buildah) is you can strengthen your container making it &quot;stronger and more fit&quot;.  By finely tuning the creation of the container, and then adding or removing pieces as you desire, you can control the size of your container and lessen its vulnerabilities.  It's all under your control.
+A really nice feature about [Buildah](https://github.com/containers/buildah) is you can strengthen your container making it &quot;stronger and more fit&quot;.  By finely tuning the creation of the container, and then adding or removing pieces as you desire, you can control the size of your container and lessen its vulnerabilities.  It's all under your control.
 
 <!--readmore-->
 
@@ -152,6 +152,6 @@ But here is where Buildah really helps your containers stay fit.  The image size
 
 ## Fit Containers via Buildah
 
-As I showed in my [previous post](http://www.projectatomic.io/blog/2017/06/introducing-buildah/), Buildah is able to create and run containers without the Docker daemon even being installed.  Buildah also allows you to easily create smaller, stronger, purpose built containers that precisely fit your needs.  Buildah is an Open Source project that you are very much welcomed to contribute to.  If you're interested in contributing or just want to watch the progress being made, [check out the project in GitHub](https://github.com/projectatomic/buildah).
+As I showed in my [previous post](http://buildah.io/blogs/2017/06/22/introducing-buildah.html), Buildah is able to create and run containers without the Docker daemon even being installed.  Buildah also allows you to easily create smaller, stronger, purpose built containers that precisely fit your needs.  Buildah is an Open Source project that you are very much welcomed to contribute to.  If you're interested in contributing or just want to watch the progress being made, [check out the project in GitHub](https://github.com/containers/buildah).
 
 I hope you found this post to be useful and gets you thinking about how you might make the containers in your own environment even stronger and more fit.  If you come up with other ways to keep your containers fitting your needs, I'd love to hear what you did!

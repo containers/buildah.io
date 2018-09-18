@@ -7,11 +7,9 @@ tags: community, open source, buildah
 comments: false
 published: true
 ---
-
+![buildah logo](https://buildah.io/images/buildah.png)
 
 # Buildah version 1.3 Release Announcement
-
-![buildah logo](https://cdn.rawgit.com/projectatomic/buildah/master/logos/buildah-logo_large.png)
 
 We're pleased to announce the release of Buildah version 1.3 which is now available from GitHub for any Linux distro.  We are shipping this release on Fedora, RHEL 7, CentOS, openSUSE and Ubuntu in the near future.
 

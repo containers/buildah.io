@@ -10,7 +10,7 @@ tags:
 - oci
 - containers
 ---
-![buildah logo](https://cdn.rawgit.com/projectatomic/buildah/master/logos/buildah-logo_large.png)
+![buildah logo](https://buildah.io/images/buildah.png)
 
 *Check out the new Buildah project logo.  Isn't it sweet?*
 
@@ -18,7 +18,7 @@ tags:
 
 I've been working with Linux containers at Red Hat since OpenShift used cartridges. With the help of some colleagues in Redwood City, I built a Red Hat MRG Messaging (Qpid) broker cartridge. When OpenShift moved to Docker, in 2013, I contributed all the original Docker man pages. I also got to contribute some of the original content to the Project Atomic web site (this site).
 
-I'm very excited to see the Project Atomic efforts in the area of the Open Container Initiative (OCI) and specifically Buildah. After trying out the great work that the team have contributed, I discovered I had the start of a pretty useful introductory tutorial, and decided to see if I could contribute that content upstream. [That pull request](https://github.com/projectatomic/buildah/pull/302) was merged recently. So let's get started.
+I'm very excited to see the Project Atomic efforts in the area of the Open Container Initiative (OCI) and specifically Buildah. After trying out the great work that the team have contributed, I discovered I had the start of a pretty useful introductory tutorial, and decided to see if I could contribute that content upstream. [That pull request](https://github.com/containers/buildah/pull/302) was merged recently. So let's get started.
 
 <!--readmore-->
 
@@ -254,6 +254,6 @@ Why not try and modify the Dockerfile? Such as: instead of installing httpd, ADD
 
 Well done! You have learned a lot about Buildah using this short tutorial. Hopefully you followed along with the examples and found them to be sufficient. Make sure to look through the Buildah man pages to see what other commands you can use.
 
-If you have any suggestions or issues please post them at the [ProjectAtomic Buildah Issues page](https://github.com/projectatomic/buildah/issues).
+If you have any suggestions or issues please post them at the [ProjectAtomic Buildah Issues page](https://github.com/containers/buildah/issues).
 
-For more information on Buildah and how you might contribute please visit the [Buildah home page on Github](https://github.com/projectatomic/buildah).
+For more information on Buildah and how you might contribute please visit the [Buildah home page on Github](https://github.com/containers/buildah).

@@ -7,10 +7,11 @@ tags: community, open source, buildah
 comments: false
 published: true
 ---
+![buildah logo](https://buildah.io/images/buildah.png)
 
 # Buildah version 1.1 Release Announcement
 
-![buildah logo](https://cdn.rawgit.com/projectatomic/buildah/master/logos/buildah-logo_large.png)
+![buildah logo](https://cdn.rawgit.com/containers/buildah/master/logos/buildah-logo_large.png)
 
 We're pleased to announce the release of Buildah version 1.1 which is now available from GitHub for any Linux distro.  We are shipping this release on Fedora, RHEL 7, CentOS and Ubuntu in the near future.
 
@@ -80,7 +81,7 @@ The Buildah project has continued to grow over the past several weeks, welcoming
    * Vendor github.com/onsi/ginkgo and github.com/onsi/gomega
    * Vendor github.com/containernetworking/cni v0.6.0
    * Update github.com/containers/storage
-   * Update github.com/projectatomic/libpod
+   * Update github.com/containers/libpod
    * Vendor in latest containers/image
  * Plus a number of smaller fixes.
  

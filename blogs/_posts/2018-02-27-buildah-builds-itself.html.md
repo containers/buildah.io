@@ -7,9 +7,9 @@ comments: false
 categories: [blogs]
 tags: atomic, buildah, containers
 ---
-![buildah logo](https://cdn.rawgit.com/projectatomic/buildah/master/logos/buildah-logo_large.png)
+![buildah logo](https://buildah.io/images/buildah.png)
 
-I’m a fan of Isaac Asimov’s ["Three Laws of Robotics"](https://en.wikipedia.org/wiki/Three_Laws_of_Robotics) and I'm beginning to wonder if these laws need to be wired into [Buildah](https://github.com/projectatomic/buildah). You see Buildah builds itself. It’s self-propagating.
+I’m a fan of Isaac Asimov’s ["Three Laws of Robotics"](https://en.wikipedia.org/wiki/Three_Laws_of_Robotics) and I'm beginning to wonder if these laws need to be wired into [Buildah](https://github.com/containers/buildah). You see Buildah builds itself. It’s self-propagating.
 
 <!--readmore-->
 
@@ -81,6 +81,6 @@ test $bv = $rv
 
 There you have it, Buildah building and testing itself.  Granted I’m not too worried if Buildah doesn’t follow the "Three Laws of Robotics" at this point, but this technique is really powerful. This test runs on each and every pull request to Buildah. If the RPM can’t be built, installed and minimal operations completed, the tests won’t run and the code won’t get committed.
 
-For more information on Buildah check it out on [GitHub](https://github.com/projectatomic/buildah) - also checkout the [rpm.bats](https://github.com/projectatomic/buildah/blob/master/tests/rpm.bats) file there which is where code examples in this blog came from.  If you’re interested, we’d love to have you become a contributor on the project.
+For more information on Buildah check it out on [GitHub](https://github.com/containers/buildah) - also checkout the [rpm.bats](https://github.com/containers/buildah/blob/master/tests/rpm.bats) file there which is where code examples in this blog came from.  If you’re interested, we’d love to have you become a contributor on the project.
 
 **Buildah == Simplicity**
