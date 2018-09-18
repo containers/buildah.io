@@ -15,6 +15,15 @@ a.buttons {
 a {
 	color: #333333;
 	font-weight: bold;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a.header {
+	font-weight: normal;
 }
 
 header li {
@@ -31,6 +40,7 @@ header li a {
 	color: #000000;
 }
 
-header li a:hover {
+a.buttons:hover {
 	color: #000000;
+	text-decoration: none;
 }
