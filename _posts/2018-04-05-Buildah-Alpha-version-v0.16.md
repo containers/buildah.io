@@ -2,11 +2,8 @@
 title: Buildah Alpha version 0.16 Release Announcement
 layout: default
 author: tsweeney
-date: 2018-04-02 00:00:00 UTC
 categories: [releases]
 tags: community, open source, buildah
-comments: false
-published: true
 ---
 ![buildah logo](https://buildah.io/images/buildah.png)
 

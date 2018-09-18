@@ -2,11 +2,8 @@
 title: Buildah version 1.2 Release Announcement
 layout: default
 author: tsweeney
-date: 2018-07-14 00:00:00 UTC
 categories: [releases]
 tags: community, open source, buildah
-comments: false
-published: true
 ---
 ![buildah logo](https://buildah.io/images/buildah.png)
 

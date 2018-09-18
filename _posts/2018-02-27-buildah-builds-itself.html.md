@@ -2,9 +2,6 @@
 title: Buildah Blocks- Buildah builds itself!
 layout: default
 author: tsweeney
-date: 2018-02-27 00:00:00 UTC
-published: true
-comments: false
 categories: [blogs]
 tags: atomic, buildah, containers
 ---

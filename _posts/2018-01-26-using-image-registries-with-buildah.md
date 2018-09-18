@@ -2,10 +2,6 @@
 title: Using OCI Image Registries with Buildah
 layout: default
 author: ipbabble
-date: 2018-01-26 00:00:00 UTC
-layout: post
-published: true
-comments: false
 categories: [blogs]
 tags: buildah, oci, containers, registry
 ---
