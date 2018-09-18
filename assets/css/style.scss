@@ -8,11 +8,20 @@ a.buttons {
 	background: none;
 	font-weight: normal;
 	text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 0;
-	padding: 2px 2px 2px 22px;
-	height: 30px;
+	padding: 2px 2px 2px 12px;
+	height: 2em;
 }
 
 header li {
 	background: #ffcb00;
+	-webkit-box-shadow: inset 0px 1px 1px 0 #ffcb00;
+  box-shadow: inset 0px 1px 1px 0 #ffcb00;
+}
+
+header li:hover {
+	background: #ffcb00;
+}
+
+header li a {
 	color: #000000;
 }
