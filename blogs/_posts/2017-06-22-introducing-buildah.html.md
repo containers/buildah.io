@@ -7,9 +7,9 @@ tags: containers, images, docker, buildah, oci
 comments: true
 published: true
 ---
-![buildah logo](https://cdn.rawgit.com/projectatomic/buildah/master/logos/buildah-logo_large.png)
+![buildah logo](https://buildah.io/images/buildah.png)
 
-Since I'm relatively new to the world of containers and images, I was excited to learn about [the Buildah tool](https://github.com/projectatomic/buildah).  Especially since I'm a native New Englander and it's a clever play on how we say Builder in these parts.
+Since I'm relatively new to the world of containers and images, I was excited to learn about [the Buildah tool](https://github.com/containers/buildah).  Especially since I'm a native New Englander and it's a clever play on how we say Builder in these parts.
 
 Buildah is a newly released command line tool for efficiently and quickly building [Open Container Initiative](https://www.opencontainers.org/) (OCI) compliant images and containers.  Buildah simplifies the process of creating, building and updating images while decreasing the learning curve of the container environment.  It is easily scriptable and can be used in an environment where one needs to spin up containers automatically based on calls from your application.  What's really neat is there is no requirement for a container runtime daemon to be running on your system chewing up resources and complicating the build process.
 
@@ -27,7 +27,7 @@ Before you can run Buildah, you need to install it.  One way is using the packag
 # dnf -y install buildah
 ```
 
-If the Buildah package is not available on your Linux distribution, or you would like to contribute to the project, you can [clone it from GitHub](https://github.com/projectatomic/buildah).  The configuration and installation process there is straightforward and is documented in the README.md file.  To configure and install Buildah using this method, I spun up my Fedora 26 Beta virtual machine (VM) and then installed the following packages using dnf on it.
+If the Buildah package is not available on your Linux distribution, or you would like to contribute to the project, you can [clone it from GitHub](https://github.com/containers/buildah).  The configuration and installation process there is straightforward and is documented in the README.md file.  To configure and install Buildah using this method, I spun up my Fedora 26 Beta virtual machine (VM) and then installed the following packages using dnf on it.
 
 ```
 # dnf -y install make golang bats btrfs-progs-devel \
@@ -41,9 +41,9 @@ After that completed I then did the following, as documented in the README.md, t
 # mkdir ~/buildah
 # cd ~/buildah
 # export GOPATH=`pwd`
-# git clone https://github.com/projectatomic/buildah \
- ./src/github.com/projectatomic/buildah
-# cd ./src/github.com/projectatomic/buildah
+# git clone https://github.com/containers/buildah \
+ ./src/github.com/containers/buildah
+# cd ./src/github.com/containers/buildah
 # make
 # make install
 ```

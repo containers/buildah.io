@@ -8,7 +8,7 @@ comments: false
 categories: [blogs]
 tags: buildah, oci, containers, registry
 ---
-![buildah logo](https://cdn.rawgit.com/projectatomic/buildah/master/logos/buildah-logo_large.png)
+![buildah logo](https://buildah.io/images/buildah.png)
 
 # Using Buildah with container registries
 
@@ -27,7 +27,7 @@ The second term is a container image repository, A repository is a local storage
  
 When you develop a useful container image using Buildah you may wish to share it with others either in a local container image registry or a remote or public container image registry. The purpose of this tutorial is to demonstrate how Buildah can be used to move OCI-compliant images in and out of private or public registries.
 
-In the [first tutorial](http://www.projectatomic.io/blog/2017/11/getting-started-with-buildah/) we built an image from scratch that we called `fedora-bashecho` and we pushed it to a local Docker repository using the `docker-daemon` protocol. We are going to use the same image to push to a private Docker registry. If you have not performed the first tutorial it is important that you do that now, before you proceed.
+In the [first tutorial](https://buildah.io/blogs/2017/11/02/getting-started-with-buildah.html) we built an image from scratch that we called `fedora-bashecho` and we pushed it to a local Docker repository using the `docker-daemon` protocol. We are going to use the same image to push to a private Docker registry. If you have not performed the first tutorial it is important that you do that now, before you proceed.
 
 ## Starting a local Image Registry
 
@@ -59,7 +59,7 @@ Let's push our image to the private registry. By default, Buildah is set up to e
 
 ## Inspecting an image with Skopeo
 
-[Skopeo](https://github.com/projectatomic/skopeo) is a Project Atomic tool that was created to inspect images in registries without having to pull the image from the registry. It has grown to have many other uses. We will verify that the image has been stored by using Skopeo to inspect the image in the registry:
+[Skopeo](https://github.com/containers/skopeo) is a Project Atomic tool that was created to inspect images in registries without having to pull the image from the registry. It has grown to have many other uses. We will verify that the image has been stored by using Skopeo to inspect the image in the registry:
 
     # skopeo inspect --tls-verify=false docker://localhost:5000/ipbabble/fedora-bashecho:latest
     {
@@ -161,7 +161,7 @@ Now check that image is in the local containers-storage:
 
 Success!
 
-If you have any suggestions or issues please post them at the [ProjectAtomic Buildah Issues page](https://github.com/projectatomic/buildah/issues).
+If you have any suggestions or issues please post them at the [ProjectAtomic Buildah Issues page](https://github.com/containers/buildah/issues).
 
-For more information on Buildah and how you might contribute please visit the [Buildah home page on Github](https://github.com/projectatomic/buildah).
+For more information on Buildah and how you might contribute please visit the [Buildah home page on Github](https://github.com/containers/buildah).
 

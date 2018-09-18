@@ -7,6 +7,7 @@ tags: community, open source, buildah
 comments: false
 published: true
 ---
+![buildah logo](https://buildah.io/images/buildah.png)
 
 # Buildah Alpha version 0.16 Release Announcement
 
