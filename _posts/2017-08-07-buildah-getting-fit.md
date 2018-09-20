@@ -7,6 +7,9 @@ tags: buildah, fedora, containers
 ---
 ![buildah logo](https://buildah.io/images/buildah.png)
 
+# Buildah Blocks &mdash; Getting Fit
+## By Tom Sweeney @TSweeneyRedHat
+
 Like many other Americans, I am fighting the battle to stay fit and I'm not always winning.  Staying fit can also be a problem in the container environment.  A common problem people have with building container images with tools like Dockerfile and the run-time-based [docker build command](https://docs.docker.com/engine/reference/commandline/build/) is the size of the image, as well as the number of build tools that end up inside of it.  Another concern about these unnecessary tools is they can weaken your container by opening potential venues for hackers to take advantage.
 
 A really nice feature about [Buildah](https://github.com/containers/buildah) is you can strengthen your container making it &quot;stronger and more fit&quot;.  By finely tuning the creation of the container, and then adding or removing pieces as you desire, you can control the size of your container and lessen its vulnerabilities.  It's all under your control.

@@ -7,7 +7,8 @@ tags: buildah, oci, containers, registry
 ---
 ![buildah logo](https://buildah.io/images/buildah.png)
 
-# Using Buildah with container registries
+# Using OCI Image Registries with Buildah
+## By William Henry @ipbabble
 
 *Prerequisite: Buildah version 0.9 or greater.*
 

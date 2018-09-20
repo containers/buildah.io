@@ -7,6 +7,9 @@ tags: atomic, buildah, containers
 ---
 ![buildah logo](https://buildah.io/images/buildah.png)
 
+# Buildah Blocks - OCI Shell Game
+## By Tom Sweeney @TSweeneyRedHat
+
 I’ve always been fascinated by the [three shells and a pea game](https://en.wikipedia.org/wiki/Shell_game) that street hustlers have used for years to make a bit of coin. I love watching a talented person running the game, but I know better than to bet on it! However, playing the game with [Buildah](https://github.com/containers/buildah) leads to everyone being a winner.
 
 I had a bit of time to play, so I tried out a variant of the shell game with Open Containers Initiative (OCI) containers. I made a quick example showing how you can create an OCI image with Buildah, saved the image to a repository on Docker Hub and then used both Docker and Buildah to run that  image from Docker Hub. Nothing terribly fancy, but the video does illustrate that Buildah is OCI-compliant and the images it creates can be used by other OCI-compliant technologies.
