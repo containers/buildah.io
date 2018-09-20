@@ -7,6 +7,9 @@ tags: atomic, buildah, containers
 ---
 ![buildah logo](https://buildah.io/images/buildah.png)
 
+# Buildah Blocks- Buildah builds itself!
+## By Tom Sweeney @TSweeneyRedHat
+
 I’m a fan of Isaac Asimov’s ["Three Laws of Robotics"](https://en.wikipedia.org/wiki/Three_Laws_of_Robotics) and I'm beginning to wonder if these laws need to be wired into [Buildah](https://github.com/containers/buildah). You see Buildah builds itself. It’s self-propagating.
 
 <!--readmore-->
