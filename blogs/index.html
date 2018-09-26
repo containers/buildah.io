@@ -9,6 +9,6 @@ title: Buildah Blogs
 
 <section class="posts">
   {% for post in site.categories.blogs %}
-    <p><h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><h3><br><h4><span>{{ post.date | date_to_string }}</span> by {{ post.author }}</h4></p>
+    <p><h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><br><span>{{ post.date | date_to_string }}</span> by {{ post.author }}</h3></p>
   {% endfor %}
 </section>
