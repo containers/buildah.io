@@ -1,5 +1,5 @@
 ---
-title: Buildah Blocks&#58 ONBUILD in Buildah
+title: Buildah Blocks&#58; ONBUILD in Buildah
 layout: default
 author: Tom Sweeney
 categories: [blogs]
@@ -8,7 +8,7 @@ tags: buildah, containers
 
 ![buildah logo](https://buildah.io/images/buildah.png)
 
-# Buildah Blocks&#58 ONBUILD in Buildah 
+# Buildah Blocks&#58; ONBUILD in Buildah 
 ## By Tom Sweeney @tomsweeneyredhat
 
 It's been a bit since a Buildah Blocks blog has come out and now that [buildah.io](https://buildah.io) is up and available to post to, I thought I'd put this blog together to talk about the ONBUILD functionality in Buidlah.  The blog will show how Buildah can use a Dockerfile containing the ONBUILD instruction or how the ONBUILD instruction can be used with the `buildah config` command.  The ONBUILD instruction stores a command in the meta data of a container image which is then invoked when a secondary container image is created.  The image can have multiple ONBUILD instructions.  Note: The ONBUILD instructions do not change the content of the image that contain the instructions, only the container images that are created from this image are changed based on the FROM command.
