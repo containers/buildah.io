@@ -198,3 +198,4 @@ For more information on Buildah and how you might contribute please visit the [B
 [GitHub]: https://github.com/containers/buildah/
 [image specification]: https://github.com/opencontainers/runtime-spec
 [Open Container Initiative]: https://www.opencontainers.org/
+[Introduction Tutorial]: https://github.com/containers/buildah/blob/master/docs/tutorials/01-intro.md
