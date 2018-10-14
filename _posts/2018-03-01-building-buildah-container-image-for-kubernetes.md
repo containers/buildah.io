@@ -11,8 +11,9 @@ tags:
 ---
 ![buildah logo](https://buildah.io/images/buildah.png)
 
+{% assign author = site.authors[page.author] %}
 # Building a Buildah Container Image for Kubernetes
-## By William Henry @ipbabble
+## By {{ author.display_name }} [GitHub](https://github.com/{{ author.github }}) [Twitter](https://twitter.com/{{ author.twitter }})
 
 ## Background
 

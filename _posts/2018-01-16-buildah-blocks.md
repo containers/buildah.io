@@ -7,8 +7,9 @@ tags: atomic, buildah, containers
 ---
 ![buildah logo](https://buildah.io/images/buildah.png)
 
+{% assign author = site.authors[page.author] %}
 # Buildah Blocks - OCI Shell Game
-## By Tom Sweeney @TSweeneyRedHat
+## By {{ author.display_name }} [GitHub](https://github.com/{{ author.github }}) [Twitter](https://twitter.com/{{ author.twitter }})
 
 I’ve always been fascinated by the [three shells and a pea game](https://en.wikipedia.org/wiki/Shell_game) that street hustlers have used for years to make a bit of coin. I love watching a talented person running the game, but I know better than to bet on it! However, playing the game with [Buildah](https://github.com/containers/buildah) leads to everyone being a winner.
 

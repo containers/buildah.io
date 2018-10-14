@@ -7,8 +7,9 @@ tags: buildah, oci, containers, registry
 ---
 ![buildah logo](https://buildah.io/images/buildah.png)
 
+{% assign author = site.authors[page.author] %}
 # Using OCI Image Registries with Buildah
-## By William Henry @ipbabble
+## By {{ author.display_name }} [GitHub](https://github.com/{{ author.github }}) [Twitter](https://twitter.com/{{ author.twitter }})
 
 *Prerequisite: Buildah version 0.9 or greater.*
 

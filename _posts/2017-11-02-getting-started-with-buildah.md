@@ -10,8 +10,9 @@ tags:
 ---
 ![buildah logo](https://buildah.io/images/buildah.png)
 
+{% assign author = site.authors[page.author] %}
 # Getting Started with Buildah
-## By William Henry @ipbabble
+## By {{ author.display_name }} [GitHub](https://github.com/{{ author.github }}) [Twitter](https://twitter.com/{{ author.twitter }})
 
 *Check out the new Buildah project logo.  Isn't it sweet?*
 
