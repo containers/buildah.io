@@ -7,8 +7,9 @@ tags: containers, images, docker, buildah, oci
 ---
 ![buildah logo](https://buildah.io/images/buildah.png)
 
+{% assign author = site.authors[page.author] %}
 # Buildah - build your containers from the ground up!
-## By Tom Sweeney @TSweeneyRedHat
+## By {{ author.display_name }} [GitHub](https://github.com/{{ author.github }}) [Twitter](https://twitter.com/{{ author.twitter }})
 
 Since I'm relatively new to the world of containers and images, I was excited to learn about [the Buildah tool](https://github.com/containers/buildah).  Especially since I'm a native New Englander and it's a clever play on how we say Builder in these parts.
 
