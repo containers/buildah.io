@@ -8,6 +8,7 @@ tags: buildah, containers
 
 ![buildah logo](https://buildah.io/images/buildah.png)
 
+{% assign author = site.authors[page.author] %}
 # Buildah Blocks&#58; ONBUILD in Buildah 
 ## By {{ author.display_name }} GitHub: {{ author.github }} Twitter: {{ author.twitter }}
 
