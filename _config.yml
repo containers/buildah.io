@@ -13,3 +13,30 @@ readme_index:
   remove_originals: false
 
 excerpt_separator: "<!--readmore-->"
+
+authors:
+  dwalsh:
+    name: Dan Walsh 
+    display_name: Dan Walsh
+    gravatar:  
+    email: dwalsh@redhat.com
+    web: https://redhat.com
+    twitter: @rhatdan
+    github: @rhatdan
+  ipbabble:
+    name: William Henry
+    display_name: ipbabble
+    gravatar: 
+    email: whenry@redhat.com
+    web: https://redhat.com
+    twitter: @ipbabble
+    github: @ipbabble
+  tsweeney:
+    name: Tom Sweeney 
+    display_name: Tom Sweeney
+    gravatar: c69c8419c8e4d1bbedc7874281453781 
+    email: tsweeney@redhat.com
+    web: https://redhat.com
+    twitter: @TSweeneyRedHat
+    github: @tomsweeneyredhat
+
