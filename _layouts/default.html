@@ -11,6 +11,7 @@
     <meta property="og:description" content="Buildah - a tool that facilitates building OCI container images.">
     <meta property="og:image" content="https://buildah.io/images/buildah-square-preview.png">
 
+    {% feed_meta %}
     {% seo %}
 
     <link rel="shortcut icon" href="/images/favicon.ico">
@@ -38,6 +39,7 @@
 
         {% if site.github.is_project_page %}
           <p class="header">This project is maintained by the <a class="header name" href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a> organization.</p>
+          <p class="header">Subscribe to the <a href="https://buildah.io/feed.xml">blog feed</a>.</p>
         {% endif %}
 
         {% if site.github.is_user_page %}
