@@ -5,7 +5,7 @@ author: tsweeney
 categories: [blogs]
 tags: containers, images, docker, buildah, podman, oci
 ---
-![podman logo](https://podman.io/images/podman.svg)
+![buildah logo](https://buildah.io/images/buildah.png)
 
 {% assign author = site.authors[page.author] %}
 
