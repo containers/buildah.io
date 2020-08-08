@@ -67,7 +67,7 @@ Now to create the first container and verify that ONBUILD has been set:
 
 ```
 # buildah bud --format=docker -f Dockerfile -t onbuild-image .
-# buildah inspect --format '{{.Docker.Config.OnBuild}}' onbuild-image
+# buildah inspect --format {% raw %}'{{.Docker.Config.OnBuild}}'{% endraw %} onbuild-image
 [RUN touch /bar]
 ```
 
@@ -97,7 +97,7 @@ First a Fedora container will be created with `buildah from`, then the `/foo` fi
 # buildah config --onbuild="RUN touch /bar" onbuild-container
 # buildah commit --format=docker onbuild-container onbuild-image
 {output edited for brevity}
-# buildah inspect --format '{{.Docker.Config.OnBuild}}' onbuild-image
+# buildah inspect --format {% raw %}'{{.Docker.Config.OnBuild}}'{% endraw %} onbuild-image
 [RUN touch /bar]
 ```
 The onbuild-image has been created, so now create a container from it using the same commands as the first example using the second Dockerfile:
@@ -150,7 +150,7 @@ onbuild-container-2
 # buildah config --onbuild="RUN /usr/bin/runecho.sh" onbuild-container-2
 # buildah commit --format=docker onbuild-container-2 onbuild-image-2
 {output edited for brevity}
-# buildah inspect --format '{{.Docker.Config.OnBuild}}' onbuild-image-2
+# buildah inspect --format {% raw %}'{{.Docker.Config.OnBuild}}'{% endraw %} onbuild-image-2
 [COPY ./runecho.sh /usr/bin/runecho.sh RUN /usr/bin/runecho.sh &> /tmp/runecho.txt]
 ```
 
