@@ -18,7 +18,7 @@ We've received a number of requests for a mailing list for Buildah and we're hap
 To sign up for the mailing list use email or the web interface:
 
   * Send an email to [buildah-join@lists.buildah.io](mailto:buildah-join@lists.buildah.io?subject=subscribe) with the word "Subscribe" in the subject.
-  * Go to this [page](https://lists.podman.io/admin/lists/buildah.lists.buildah.io/) on the [https://lists.buildah.io](https://lists.buildah.io) site, scroll down to the bottom of the page and enter your email and optionally name, then click on the "Subscribe" buton.
+  * Go to this [page](https://lists.podman.io/admin/lists/buildah.lists.buildah.io/) on the [https://lists.buildah.io](https://lists.buildah.io) site, scroll down to the bottom of the page and enter your email and optionally name, then click on the "Subscribe" button.
 
 Regardless of which method you use, a confirmation email will be sent to you.  After you reply back to that confirmation email, you'll then be able to send mail directly to [buildah@lists.buildah.io](mailto:buildah@lists.buildah.io).  You can then also go to the list's [web page](https://lists.podman.io/archives/list/buildah@lists.buildah.io/) and from there you can see all of the past conversations on the list or manage your subscription.
 
