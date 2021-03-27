@@ -4,8 +4,7 @@ layout: default
 author: kshirinkin
 categories: [blogs]
 
-tags: community, open source, buildah, skopeo, dive, kubernetes,
-dockerless
+tags: community, open source, buildah, skopeo, dive, kubernetes, dockerless
 ---
 
 # Buildah, Dive, Skopeo&#58; 3 Container Tools for building images on Kubernetes Cluster
