@@ -4,8 +4,7 @@ layout: default
 author: tsweeney
 categories: [blogs]
 
-tags: community, open source, buildah, skopeo, dive, kubernetes,
-dockerless
+tags: community, open source, buildah, skopeo, dive, kubernetes, dockerless
 ---
 
 # Reproducible Container Images 
