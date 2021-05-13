@@ -13,8 +13,8 @@ tags: community, open source, buildah, hpc
 We're pleased to announce the release of [Buildah](https://github.com/containers/buildah) [version 1.17.0](https://github.com/containers/buildah/releases/tag/v1.17.0) which is now available from GitHub for any Linux distro.  We are shipping this release on Fedora 32 & 33 and RHEL 8.4.  This will also be shipped on CentOS, openSUSE and Ubuntu in the near future.  In addition, container images will be available at https://quay.io/repository/buildah/stable and https://quay.io/repository/containers/buildah
 The Buildah project has continued to grow over the past several weeks, welcoming several new contributors to the mix.  This release features the notable enhancements:  Several new options were added to the `buildah manifest add` command, the `mount` command now returns a container name rather than a container id, changes were made to allow Buildah containers to be accessible to Podman, and a number of bug fixes. 
 
-* The following new options have been added to the `manifest add` command: `cert-dir`, `auth-file`, `creds`, `tls-verify`.  See the [`buildah-manifest-add(1)`](https://github.com/containers/buildah/blob/master/docs/buildah-manifest-add.md) man page for details.
-* The `buildah` mount command now returns a container name rather than a container id.  See the [`buildah-mount(1)`](https://github.com/containers/buildah/blob/master/docs/buildah-mount.md) man page for more details. 
+* The following new options have been added to the `manifest add` command: `cert-dir`, `auth-file`, `creds`, `tls-verify`.  See the [`buildah-manifest-add(1)`](https://github.com/containers/buildah/blob/main/docs/buildah-manifest-add.md) man page for details.
+* The `buildah` mount command now returns a container name rather than a container id.  See the [`buildah-mount(1)`](https://github.com/containers/buildah/blob/main/docs/buildah-mount.md) man page for more details. 
 * A number of internal changes were made to the Buildah containers to make them more accessible from within Podman.  Stay tuned to future announcements from Podman and Buildah.
 * A number of bug fixes were made concerning the extraction of images during build processes, the setting of permissions for bind mounts, a number of bash completions were added, support for Read Only overlay mounts was corrected, and a number of other fixes. 
 <!--readmore -->
@@ -47,7 +47,7 @@ This release comprises changes made for v1.16.0 through v1.17.0.
   * The bash completions for the  manifest options have been corrected.
   * Updates to  bash completions for the `manifest add` sub command were completed.
   * Fixes a regression where attempting to "squash" an image while committing it could fail. 
-  * The following new options have been added to the `manifest add` command: `cert-dir`, `auth-file`, `creds`, `tls-verify`.  See the [`buildah-manifest-add(1)`](https://github.com/containers/buildah/blob/master/docs/buildah-manifest-add.md) man page for details. 
+  * The following new options have been added to the `manifest add` command: `cert-dir`, `auth-file`, `creds`, `tls-verify`.  See the [`buildah-manifest-add(1)`](https://github.com/containers/buildah/blob/main/docs/buildah-manifest-add.md) man page for details. 
   * Bump to v1.17.0-dev
 
 ### Overall Miscellaneous Changes  
@@ -100,7 +100,7 @@ This release comprises changes made for v1.16.0 through v1.17.0.
 
 ## Try it Out.
  
-If you haven’t yet, [install Buildah](https://github.com/containers/buildah/blob/master/install.md) from one of the Linux repos or GitHub and give it a spin.  We’re betting you'll find it’s an easy and quick way to build containers in your environment without a daemon being involved!
+If you haven’t yet, [install Buildah](https://github.com/containers/buildah/blob/main/install.md) from one of the Linux repos or GitHub and give it a spin.  We’re betting you'll find it’s an easy and quick way to build containers in your environment without a daemon being involved!
 
 For those of you who contributed to this release, thank you very much for your contributions!  If you haven't joined our community yet, don't wait any longer!  Come join us on GitHub, where Open Source communities live.
 

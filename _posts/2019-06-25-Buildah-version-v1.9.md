@@ -18,7 +18,7 @@ The Buildah project has continued to grow over the past several weeks, welcoming
 This release comprises changes made for v1.8.1, v1.8.2, v1.8.3, v1.8.4 and v1.9.0.
 
 ## The major highlights for this release are:
-* Support has been added to allow the `bud` command to mount a directory from the host as temporary storage using the Overlay file system which greatly speeds up install procedures.  Reference the “Overlay Volume Mounts” section in the [buildah-bud(1)](https://github.com/containers/buildah/blob/master/docs/buildah-bud.md) man page for details.
+* Support has been added to allow the `bud` command to mount a directory from the host as temporary storage using the Overlay file system which greatly speeds up install procedures.  Reference the “Overlay Volume Mounts” section in the [buildah-bud(1)](https://github.com/containers/buildah/blob/main/docs/buildah-bud.md) man page for details.
 * A number of changes were made to the cache checking when building an image to help expedite the image building process.
 * The `dns` option for the `bud` and `from` commands can now accept the value `none` which disables the creation of `/etc/resolv.conf` in the container.
 * A number of issues when a symbolic link was part of a `ADD`, `COPY`, `WORKDIR` and other Dockerfile commands have been resolved.
@@ -58,7 +58,7 @@ This release comprises changes made for v1.8.1, v1.8.2, v1.8.3, v1.8.4 and v1.9.
   * Apply the Dockerfile SHELL command appropriately during build time.
   * Environment variables passed into the build process were expanded multiple times, now they are expanded just once to speed up processing.
   * The $HOME environment variable is now set if it had not been set previously, defaulting to `/` if no other value is found.
-  * Support has been added for Overlay volumes into the container which greatly speeds up install procedures.  Reference the “Overlay Volume Mounts” section in the [buildah-bud(1)](https://github.com/containers/buildah/blob/master/docs/buildah-bud.md) man page.
+  * Support has been added for Overlay volumes into the container which greatly speeds up install procedures.  Reference the “Overlay Volume Mounts” section in the [buildah-bud(1)](https://github.com/containers/buildah/blob/main/docs/buildah-bud.md) man page.
   * The --shm-size option used by the `from` command was being ignored in rootless processing.  This has been corrected.
   * A number fmt.Printf() statements were moved or removed from the library code to allow for better output to the end user.
   * The algorithm for the history checking in the build process has been made more precise as a full history is now employed during the check.
@@ -106,7 +106,7 @@ This release comprises changes made for v1.8.1, v1.8.2, v1.8.3, v1.8.4 and v1.9.
 
 ## Try it Out.
 
-If you haven’t yet, [install Buildah](https://github.com/containers/buildah/blob/master/install.md) from one of the Linux repos or GitHub and give it a spin.  We’re betting you'll find it’s an easy and quick way to build containers in your environment without a daemon being involved!
+If you haven’t yet, [install Buildah](https://github.com/containers/buildah/blob/main/install.md) from one of the Linux repos or GitHub and give it a spin.  We’re betting you'll find it’s an easy and quick way to build containers in your environment without a daemon being involved!
 
 For those of you who contributed to this release, thank you very much for your contributions!  If you haven't joined our community yet, don't wait any longer!  Come join us on GitHub, where Open Source communities live.
 

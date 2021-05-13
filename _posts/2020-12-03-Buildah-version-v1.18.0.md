@@ -15,7 +15,7 @@ We're pleased to announce the release of [Buildah](https://github.com/containers
 The Buildah project has continued to grow over the past several weeks, welcoming several new contributors to the mix.  This release features the notable enhancements: Short name aliases for container image names can now be declared and used more securely, the pull policy to use with the `buildah pull` command can now be specified, a few speed improvements to the build process were created, and a number of bug fixes. 
 
 * Short name aliases can now be declared and used in a more secure manner.  For more details see this blog [post](https://www.redhat.com/sysadmin/container-image-short-names).
-* The `--policy` option has been added to `buildah pull` allowing the user to specify the pull policy to use when pulling.  The valid values are: missing, always and never.  See (buildah-pull(1)](https://github.com/containers/buildah/blob/master/docs/buildah-pull.md) for details.
+* The `--policy` option has been added to `buildah pull` allowing the user to specify the pull policy to use when pulling.  The valid values are: missing, always and never.  See (buildah-pull(1)](https://github.com/containers/buildah/blob/main/docs/buildah-pull.md) for details.
 
 <!--readmore -->
 
@@ -25,7 +25,7 @@ This release comprises changes made for v1.17.0 through v1.18.0.
 
 ### Changes for v1.18.0
   * Short-names aliasing for container images has been enhanced.
-  * The `--policy` option has been added to `buildah pull` allowing the user to specify the pull policy to use when pulling.  The valid values are: missing, always and never.  See (buildah-pull(1)](https://github.com/containers/buildah/blob/master/docs/buildah-pull.md) for details.
+  * The `--policy` option has been added to `buildah pull` allowing the user to specify the pull policy to use when pulling.  The valid values are: missing, always and never.  See (buildah-pull(1)](https://github.com/containers/buildah/blob/main/docs/buildah-pull.md) for details.
   * A number of error messages have been changed to be more comprehensible.
   * The `--hostname` option for the `buildah run` command should work as expected for unprivileged users.
   * The `--cmd` option for the `buildah config` command should now handle an array of commands as originally designed.
@@ -57,7 +57,7 @@ This release comprises changes made for v1.17.0 through v1.18.0.
 
 ## Try it Out.
  
-If you haven’t yet, [install Buildah](https://github.com/containers/buildah/blob/master/install.md) from one of the Linux repos or GitHub and give it a spin.  We’re betting you'll find it’s an easy and quick way to build containers in your environment without a daemon being involved!
+If you haven’t yet, [install Buildah](https://github.com/containers/buildah/blob/main/install.md) from one of the Linux repos or GitHub and give it a spin.  We’re betting you'll find it’s an easy and quick way to build containers in your environment without a daemon being involved!
 
 For those of you who contributed to this release, thank you very much for your contributions!  If you haven't joined our community yet, don't wait any longer!  Come join us on GitHub, where Open Source communities live.
 
