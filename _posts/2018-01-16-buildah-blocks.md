@@ -17,7 +17,7 @@ I had a bit of time to play, so I tried out a variant of the shell game with Ope
 
 <!--readmore-->
 
-The [demo](https://asciinema.org/a/biE5aEvLRJK6uMBwd106eB7S1) was recorded on a Fedora 27 virtual machine that was installed and then updated on December 23, 2017.  I decided to "leverage" William Henry’s [Buildah Tutorial #1](https://github.com/containers/buildah/blob/master/docs/tutorials/tutorials.md) a bit to create a Dockerfile that runs his `runecho.sh` file. Prior to the video, I did the following on the virtual machine:
+The [demo](https://asciinema.org/a/biE5aEvLRJK6uMBwd106eB7S1) was recorded on a Fedora 27 virtual machine that was installed and then updated on December 23, 2017.  I decided to "leverage" William Henry’s [Buildah Tutorial #1](https://github.com/containers/buildah/blob/main/docs/tutorials/tutorials.md) a bit to create a Dockerfile that runs his `runecho.sh` file. Prior to the video, I did the following on the virtual machine:
 
 ```
 # dnf install -y docker buildah

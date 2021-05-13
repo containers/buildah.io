@@ -59,7 +59,7 @@ quay.io/buildah/stable     latest   b1006027935c   19 hours ago   332 MB
 
 ### Taking Buildah for a test run
 
-Now that the engine is warmed up, let’s take it for a little more than a test spin.  Let’s build a new container image that when run will accept a city name and will then spit out the current weather there.  First we’ll need to have two files locally, a small python script and a Dockerfile to build our new “weather” image.  Both files are available at [GitHub](https://github.com/containers/Demos/tree/master/building/myweather) and for reference the Dockerfile contains:
+Now that the engine is warmed up, let’s take it for a little more than a test spin.  Let’s build a new container image that when run will accept a city name and will then spit out the current weather there.  First we’ll need to have two files locally, a small python script and a Dockerfile to build our new “weather” image.  Both files are available at [GitHub](https://github.com/containers/Demos/tree/main/building/myweather) and for reference the Dockerfile contains:
 
 ```
 $ cat Dockerfile.weather
