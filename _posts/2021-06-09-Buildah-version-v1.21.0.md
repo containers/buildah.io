@@ -16,7 +16,7 @@ The Buildah project has continued to grow over the past several weeks, welcoming
 
   * A `--secret` option has been added to the `bud` command, which allows passing secret information (such as a database password) to the Container without it being stored in the final image.  See the `buildah bud` man page for more information.
   *  The `buildah manifest rm` command has been added and allows the user to remove one or more manifest lists.  See the `buildah manifest` and `buildah manifest rm` man pages for more information.
-    * The code that did container image handling has been removed from Buildah and replaced with the new `libimage` package that resides in [containers/common](https://github.com/containers/common/tree/master/libimage).  This code is used by a number of projects in the Containers organization and has proven to be more efficient than the older code. 
+  * The code that did container image handling has been removed from Buildah and replaced with the new `libimage` package that resides in [containers/common](https://github.com/containers/common/tree/master/libimage).  This code is used by a number of projects in the Containers organization and has proven to be more efficient than the older code. 
 
 <!--readmore -->
 
