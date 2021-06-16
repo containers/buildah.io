@@ -55,3 +55,14 @@ use:
 
 title: My first blog post&#58; Can you believe it?
 ```
+
+# New 'main' branch
+
+To be more inclusive, the `master` branch for this repository has been renamed to `main`.  If you have a local clone, you can update it by running:
+
+```
+git branch -m master main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
+```
