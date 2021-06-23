@@ -46,7 +46,7 @@ This release comprises changes made for v1.19.0 through v1.20.0.
   * Build stages with no instructions are no longer reaped.
   * The name of the base image is now stored in the comment of the image’s first layer.
   * The overlay file system has a new “volatile” mount option which reduces I/O by ignoring fsync and syncfs requests.  This has been enabled for Buildah containers.
-  * A number of options in the `buildah config` command now support the `-`  value (single dash), which removes all values in the configuration for that option type.  Examples are `--label`, `--port`, and more.  See the [buildah config man page](https://github.com/containers/buildah/blob/master/docs/buildah-config.md) for details.
+  * A number of options in the `buildah config` command now support the `-`  value (single dash), which removes all values in the configuration for that option type.  Examples are `--label`, `--port`, and more.  See the [buildah config man page](https://github.com/containers/buildah/blob/main/docs/buildah-config.md) for details.
   * When building an image with the same build args, the cache was not used [Issue 2992](https://github.com/containers/buildah/issues/2992).  This has been corrected.
   * The `buildah add` and `buildah copy` commands have added the `--chmod`  option to set the destination permissions.
   * The `--iidfile` option now prefixes the imageId with a hash character compatible with Docker.
@@ -65,8 +65,8 @@ This release comprises changes made for v1.19.0 through v1.20.0.
   * Remove the duplicate arch and os from the `from` man page.
   * Fixed the tutorial for rootless mode.
   * Fixed the `--format` option documentation in the buildah push man page.
-  * Add information about multi-arch images to the [buildahimage](https://github.com/containers/buildah/blob/master/contrib/buildahimage/README.md)Readme.
-  * Added required devel packages to this [tutorial](https://github.com/containers/buildah/blob/master/docs/tutorials/04-include-in-your-build-tool.md).
+  * Add information about multi-arch images to the [buildahimage](https://github.com/containers/buildah/blob/main/contrib/buildahimage/README.md)Readme.
+  * Added required devel packages to this [tutorial](https://github.com/containers/buildah/blob/main/docs/tutorials/04-include-in-your-build-tool.md).
 
 
 * Vendored:
@@ -111,7 +111,7 @@ This release comprises changes made for v1.19.0 through v1.20.0.
 
 ## Try it Out.
  
-If you haven’t yet, [install Buildah](https://github.com/containers/buildah/blob/master/install.md) from one of the Linux repos or GitHub and give it a spin.  We’re betting you'll find it’s an easy and quick way to build containers in your environment without a daemon being involved!
+If you haven’t yet, [install Buildah](https://github.com/containers/buildah/blob/main/install.md) from one of the Linux repos or GitHub and give it a spin.  We’re betting you'll find it’s an easy and quick way to build containers in your environment without a daemon being involved!
 
 For those of you who contributed to this release, thank you very much for your contributions!  If you haven't joined our community yet, don't wait any longer!  Come join us on GitHub, where Open Source communities live.
 

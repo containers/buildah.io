@@ -4,7 +4,7 @@ title: Buildah
 ---
 # {{ page.title }}
 
-Welcome to the site for [Buildah](https://github.com/containers/buildah/blob/master/README.md). This site features announcements and news around Buildah, and occasionally other [container tooling](https://github.com/containers/) news.
+Welcome to the site for [Buildah](https://github.com/containers/buildah/blob/main/README.md). This site features announcements and news around Buildah, and occasionally other [container tooling](https://github.com/containers/) news.
 
 ![Buildah logo](images/buildah.png)
 
@@ -17,4 +17,4 @@ Welcome to the site for [Buildah](https://github.com/containers/buildah/blob/mas
   {% endfor %}
 </section>
 
-#### Now where is that Container Commandos [Coloring Book](https://github.com/mairin/coloringbook-container-commandos/blob/master/Web.pdf)?
+#### Now where is that Container Commandos [Coloring Book](https://github.com/mairin/coloringbook-container-commandos/blob/main/Web.pdf)?
