@@ -10,7 +10,7 @@ tags: community, open source, buildah, hpc, opensource, containers, images, imag
 
 # Buildah version 1.26.1 Released!
 
-We're pleased to announce the release of [Buildah](https://github.com/containers/buildah) [version 1.26.1](https://github.com/containers/buildah/releases/tag/v1.26.1) and [version 1.26.0](https://github.com/containers/buildah/releases/tag/v1.26.0), which are now available from GitHub for any Linux distro.  We are shipping this release on Fedora 35, Fedora 226, and RHEL 8.6.0.2.  Buildah will also be shipped on CentOS, OpenSUSE, and Ubuntu soon.  In addition, container images will be available at https://quay.io/repository/buildah/stable and https://quay.io/repository/containers/buildah.
+We're pleased to announce the release of [Buildah](https://github.com/containers/buildah) [version 1.26.1](https://github.com/containers/buildah/releases/tag/v1.26.1) and [version 1.26.0](https://github.com/containers/buildah/releases/tag/v1.26.0), which are now available from GitHub for any Linux distro.  We are shipping this release on Fedora 35, Fedora 36, and RHEL 8.6.0.2.  Buildah will also be shipped on CentOS, OpenSUSE, and Ubuntu soon.  In addition, container images will be available at https://quay.io/repository/buildah/stable and https://quay.io/repository/containers/buildah.
 
 The Buildah project has continued to grow over the past several weeks, welcoming several new contributors to the mix.  This release features notable enhancements: 
   * A number of additonal BuildKit additions.
