@@ -19,7 +19,7 @@ The Buildah project has continued to grow over the past several weeks, welcoming
  * The `build` command now has a `--no-hostname` option which prevents the container’s `/etc/hostname` file from being populated.
  * The `login` and `logout` commands now support editing Docker-compatible config files, using a `--compat-auth-file`.
  * The `ADD` command in a Containerfile now supports the --checksum flag for HTTP sources
-This release comprises changes made for v1.33.0 and will be included in Podman v4.5.
+This release comprises changes made for v1.33.0 and will be included in Podman v4.8.
 
 ## Release Changes
 
